@@ -1,0 +1,6 @@
+data-attribute: data attribute in HTML is a way of passing information to a tag (element) to some piece of javascript code.
+
+aria-control: It's commonly used to describe a relationship between a button and the expandable region revealed by that button.
+
+right to left navbar:
+add ml-auto to navbar-nav class in order to right to left navbar. and add text-align to right in css in order to right to left when navbar is collapse.

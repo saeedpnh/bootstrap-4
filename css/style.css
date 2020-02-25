@@ -1,0 +1,113 @@
+:root {
+  --bg-color: coral;
+  --light-blue: #89cff0;
+}
+
+/* راست چین کردن منوها */
+.nav-item {
+  text-align: right;
+}
+
+/* add backgeound photo to header */
+.site-header {
+  background: url(../img/bg-photo-header.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layout-hero {
+  min-height: 50vh;
+}
+
+.site-nav.inbody {
+  background-color: #999999;
+  transition: background-color 1s ease-in;
+}
+
+/* add underline oh hover effect */
+nav .nav-link {
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 2px;
+}
+
+nav .nav-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  max-width: 100px;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: yellow;
+  transform: scaleX(0);
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+}
+
+nav .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .site-header .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+  }
+}
+
+/* *******************page multicolumn start********************* */
+#page-multicolumn {
+  background-color: var(--light-blue);
+}
+
+#page-multicolumn header h2 {
+  color: rgba(240, 137, 156, 1);
+}
+
+#page-multicolumn img {
+  transition: all 0.3s ease-out;
+}
+
+#page-multicolumn img:hover {
+  transform: scale(1.1) translateY(-3px);
+}
+
+
+/* *******************page multicolumn end************ */
+
+
+/* *******************photo-grid start********************* */
+#page-photogrid {
+  background-color: #F0C808;
+}
+
+/* *******************photo-grid end********************* */
+
+
+/* *******************floater start********************* */
+#page-floater {
+  background-color: lightblue;
+}
+
+@media (min-width: 768px) {
+  #page-floater {
+    margin: 150px 0 150px 0;
+  }
+
+  .layout-container {
+    position: relative;
+  }
+
+  .layout-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg) scale(1.2);
+  }
+}
+
+/* *******************floater end********************* */
